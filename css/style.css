@@ -87,7 +87,7 @@ header {
 
 header nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 12rem;
@@ -121,8 +121,8 @@ header nav .logo img {
 
 }
 
- .nav-lists li:hover,
- .nav-lists li:active {
+.nav-lists li:hover,
+.nav-lists li:active {
     color: var(--primary-button-background);
 }
 
@@ -684,7 +684,7 @@ header nav .logo img {
     }
 
     .common-section .right-side {
-        margin-left: 4.5rem;
+        margin-left: 2.5rem;
     }
 
     .common-section .left-side figure {
@@ -760,7 +760,10 @@ header nav .logo img {
 
 /* -----------------------------mobile-------------------------------------  */
 @media (max-width:770px) {
-
+    body{
+        overflow: hidden;
+        
+    }
     header,
     .main-hero-section,
     .common-section {
@@ -775,14 +778,14 @@ header nav .logo img {
     .nav-lists {
         position: absolute;
         right: 0px;
-        height: 68vh;
-        top: 8vh;
+        height: 88vh;
+        top: 12vh;
         background-color: rgb(254, 253, 252);
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 60px;
-        width: 60%;
+        padding: 7rem;
+        width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 8;
@@ -803,7 +806,7 @@ header nav .logo img {
         visibility: inherit;
         font-size: 25px;
         margin: 0 3rem;
-        cursor:pointer;
+        cursor: pointer;
 
     }
 
@@ -811,8 +814,8 @@ header nav .logo img {
         display: block;
     }
 
-    
-    
+
+
 
     /* main main-hero-section style */
 
@@ -872,6 +875,7 @@ header nav .logo img {
         height: 55rem;
         width: 37rem;
         margin-bottom: 4rem;
+        margin-top: 4rem;
     }
 
     .common-section .left-side figure img {
@@ -895,6 +899,7 @@ header nav .logo img {
         height: inherit;
         padding: 2rem 5rem;
         margin-bottom: 2rem;
+        margin-top: 4rem;
     }
 
     .section-third h2 {
@@ -955,12 +960,13 @@ header nav .logo img {
         display: grid;
         grid-template-columns: none;
     }
-    .nav-active{
+
+    .nav-active {
         transform: translateX(0);
     }
 }
 
-.nav-active{
+.nav-active {
     transform: translateX(0);
 }
 
