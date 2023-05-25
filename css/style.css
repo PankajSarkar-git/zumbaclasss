@@ -1,0 +1,976 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* google font link  */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400&display=swap');
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    --main-color: rgb(11, 10, 10);
+    --primary-color: #888888;
+    --button-background: #4b709e;
+    --primary-button-background: #fe7649;
+    --background-color: #dfe6ef;
+}
+
+h1,
+h2 {
+    color: var(--main-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+h3,
+h4 {
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+
+p,
+a,
+li,
+button {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+button {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+
+
+/* -------------------------------nav style------------------------------------  */
+
+header {
+    padding: 0 20rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    padding-top: 2rem;
+}
+
+header nav .logo img {
+    height: 6rem;
+    width: 10rem;
+}
+
+.nav-lists {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+
+}
+
+.nav-lists a {
+    margin-right: 2rem;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in;
+}
+
+.nav-lists a li {
+    font-size: 2rem;
+
+}
+
+ .nav-lists li:hover,
+ .nav-lists li:active {
+    color: var(--primary-button-background);
+}
+
+/* ---------------------------------mobile menu---------------------------------  */
+#menu {
+    display: none;
+    visibility: hidden;
+    font-size: 25px;
+}
+
+#bar {
+    display: none;
+}
+
+#crose {
+    display: none;
+}
+
+
+
+/* ---------------------------hero css style------------------------------------------ */
+.main-hero-section {
+    padding: 0 20rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.main-hero-section .hero-left-side {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-hero-section h1 {
+    width: 55rem;
+    font-size: 7.5rem;
+    line-height: 9rem;
+    margin-bottom: 5rem;
+}
+
+.main-hero-section p {
+    margin-bottom: 8rem;
+    width: 45rem;
+}
+
+.main-hero-section a img {
+    width: 13rem;
+    height: 4rem;
+}
+
+.main-hero-section a {
+    margin: 2rem;
+}
+
+.main-hero-section .button-group a .app-store {
+    height: 4.2rem;
+    width: 15.5rem;
+}
+
+/* ------------------------hero-right-side section style--------------------------------------- */
+
+.main-hero-section .hero-right-side {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--background-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 90px 20px 0px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-hero-section .hero-right-side img {
+    width: 60rem;
+    margin-right: 10rem;
+}
+
+
+/* -----------------------our 2nd section its hare---------------------------- */
+
+
+/* --------------------------------------------------left side ------------------------------------ */
+
+.common-section {
+    width: 100%;
+    height: 70rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 9rem;
+    padding: 0 20rem;
+}
+
+.common-section .left-side {
+    width: inherit;
+    height: inherit;
+}
+
+.common-section .left-side figure {
+    width: 40rem;
+    height: 65rem;
+    background-color: #d7e5f6;
+    border-radius: 2rem;
+}
+
+.common-section .left-side img {
+    width: 45rem;
+    height: 60rem;
+    margin-left: 10rem;
+    margin-top: 2.5rem
+}
+
+
+/* ----------------------------------right side ------------------------------------ */
+.common-section .right-side {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.common-section .right-side h2 {
+    width: 40rem;
+    font-size: 5.5rem;
+    line-height: 6.3rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+
+.common-section .right-side p {
+    width: 43rem;
+    height: 9rem;
+    text-transform: lowercase;
+    margin-bottom: 3rem;
+}
+
+.common-section .right-side .common-btn {
+    padding: 1rem 3rem;
+    background-color: var(--primary-button-background);
+    margin-right: 2rem;
+    color: #fff;
+    ;
+}
+
+.common-section .right-side .common-btn:hover,
+.common-section .right-side .common-btn:active {
+    background-color: #de4411;
+}
+
+.common-section .right-side button:last-child {
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+.common-section .right-side button:last-child:hover,
+.common-section .right-side button:last-child:active {
+    background-color: var(--primary-button-background);
+    color: #fff;
+}
+
+
+/* -----------------------our 3rd section its hare---------------------------- */
+
+
+
+
+.section-third {
+    width: 100%;
+    height: 70rem;
+    background-color: var(--background-color);
+    padding: 3rem 20rem;
+}
+
+.section-third h2 {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.section-third p {
+    width: 35rem;
+    height: 9rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: auto;
+}
+
+.section-third .section-third-task {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4rem;
+    margin-top: 3rem;
+
+
+}
+
+.section-third .section-third-task .task-1,
+.section-third .section-third-task .task-2,
+.section-third .section-third-task .task-3 {
+    padding-top: 2rem;
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 2rem;
+}
+
+.section-third .section-third-task .task-1 h3,
+.section-third .section-third-task .task-2 h3,
+.section-third .section-third-task .task-3 h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+
+.section-third .section-third-task .task-1 img,
+.section-third .section-third-task .task-2 img,
+.section-third .section-third-task .task-3 img {
+    height: 10rem;
+    width: 10rem;
+    transition: all 0.3s;
+}
+
+.section-third .section-third-task .task-1 img {
+    height: 10rem;
+    width: 15rem;
+    transition: all 0.3s;
+}
+
+.section-third .section-third-task .task-3 {
+    background-color: #fff;
+    box-sizing: 0rem 0.4rem 2rem rgba(62, 78, 89, 0.25);
+}
+
+.section-third .section-third-task .task-1:hover,
+.section-third .section-third-task .task-2:hover {
+    background-color: #fff;
+    box-sizing: 0rem 0.4rem 2rem rgba(62, 78, 89, 0.25);
+}
+
+.section-third .section-third-task .task-1:hover>img,
+.section-third .section-third-task .task-2:hover>img,
+.section-third .section-third-task .task-3:hover>img {
+    transform: rotate(360deg);
+}
+
+/* ----------------------------our 4th section its hare------------------------------ */
+
+/* #section-four {
+    padding: 10rem 20rem;
+} */
+#section-four h2 {
+    width: 50rem;
+}
+
+
+/* ----------------------------our fifth section its hare------------------------------ */
+
+
+#section-five .right-side {
+    justify-content: flex-start;
+    padding-top: 2rem;
+}
+
+#section-five .right-side h2 {
+    width: 63rem;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 6.3rem;
+}
+
+#section-five .right-side h3 {
+    text-decoration: none;
+}
+
+#section-five .right-side p {
+    height: 5rem;
+}
+
+#section-five .right-side .fa-heart {
+    color: red;
+    margin: .6rem;
+}
+
+#section-five .left-side {
+    margin-right: 20rem;
+}
+
+
+/* ----------------------------our footer section its hare------------------------------ */
+
+.footer {
+    width: 100%;
+    background-color: var(--background-color);
+    height: auto;
+    padding: 5rem 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer .footer-logo {
+    margin-top: 5rem;
+}
+
+.footer .footer-logo img {
+    width: 13rem;
+    height: 5.5rem;
+    margin-top: 2rem;
+}
+
+.footer .footer-menu {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer div h4 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 2rem 0;
+}
+
+.footer div a {
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+
+.footer .footer-menu div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* <!-- socal icons --> */
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.icon-bar a {
+    width: 18rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    transition: all 0.3s linear;
+    transform: translateX(-14.5rem);
+    border-radius: .6rem;
+}
+
+.icon-bar a:hover {
+    transform: translatex(0);
+    /* background-color: var(--primary-button-background); */
+}
+
+.icon-bar a .fa-brands {
+    padding-left: .5rem;
+    font-size: 3rem;
+    animation: lestZoom 2s linear alternate-reverse infinite;
+}
+
+@keyframes lestZoom {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.facebook {
+    background-color: #2028b7;
+}
+
+.instagram {
+    background-color: #e20f3a;
+}
+
+.linkedin {
+    background-color: #0A66C2;
+}
+
+.youtube {
+    background-color: red;
+}
+
+
+
+
+
+/* -----------------------------------------responsive----------------------------------------- */
+@media (max-width:1620px) {
+
+    header,
+    .main-hero-section,
+    .common-section {
+        padding: 0 12rem;
+
+    }
+
+    .main-hero-section .hero-right-side img {
+        width: 60rem;
+        height: 50rem;
+        margin: 0;
+        margin-top: 5rem;
+        margin-right: 10rem;
+    }
+
+
+}
+
+/* ------------------------------------------laptop------------------------------------------ */
+
+@media (max-width:1280px) {
+
+    header,
+    .main-hero-section,
+    .common-section {
+        padding: 0 10rem;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .main-hero-section {
+        height: 60vh;
+    }
+
+    .main-hero-section .hero-right-side {
+        height: 70vh;
+    }
+
+    .main-hero-section .hero-right-side img {
+        width: 50rem;
+        height: 40rem;
+        margin: 0;
+        margin-top: 5rem;
+        margin-right: 5rem;
+    }
+
+    /* common section  */
+    .common-section .left-side img {
+        height: 55rem;
+        width: 40rem;
+    }
+
+    /* third section  */
+    .section-third {
+        padding: 2rem 10rem;
+    }
+
+    .section-third .section-third-task {
+        grid-column-gap: 2rem;
+    }
+
+    .section-third .section-third-task .task-1 h3,
+    .section-third .section-third-task .task-2 h3,
+    .section-third .section-third-task .task-3 h3 {
+        font-size: 2rem;
+    }
+
+    .section-third .section-third-task .task-1 p,
+    .section-third .section-third-task .task-2 p,
+    .section-third .section-third-task .task-3 p {
+        width: 32rem;
+    }
+
+    /* fifth section  */
+    #section-five .right-side h2 {
+        width: 45rem;
+        line-height: 5.3rem;
+    }
+}
+
+
+
+/* ----------------------------------tablet---------------------------------- */
+
+@media (max-width:980px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header,
+    .main-hero-section,
+    .common-section {
+        padding: 0 8rem;
+    }
+
+    header nav .left-side-menu .sub-menu ul {
+        width: 40%;
+    }
+
+    .main-hero-section {
+        height: 60vh;
+    }
+
+    .main-hero-section h1 {
+        width: 50rem;
+        font-size: 6rem;
+        line-height: 6rem;
+        margin: 5rem 0px;
+    }
+
+    .main-hero-section p {
+        margin-bottom: 4rem;
+    }
+
+    .main-hero-section .button-group {
+        margin-bottom: 6rem;
+    }
+
+    .main-hero-section .hero-right-side {
+        height: 70vh;
+        background-color: transparent;
+    }
+
+    .main-hero-section .hero-right-side img {
+        width: 50rem;
+        height: 40rem;
+        margin: 0;
+        margin-top: 25rem;
+    }
+
+    .main-hero-section .hero-left-side {
+        margin-top: 10rem;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+    /* common section  */
+    .common-section {
+        margin-bottom: 0rem;
+        padding-bottom: 4rem;
+    }
+
+    #section-two {
+        padding-bottom: 0rem;
+        margin-bottom: 0;
+    }
+
+    .common-section .right-side {
+        margin-left: 4.5rem;
+    }
+
+    .common-section .left-side figure {
+        height: 56rem;
+    }
+
+    .common-section .left-side img {
+        height: 50rem;
+        width: 35rem;
+        margin-right: 0rem;
+        margin-top: 7rem;
+    }
+
+    /* section-third  */
+
+    .section-third {
+        padding: 2rem 8rem;
+    }
+
+    .section-third .section-third-task {
+        grid-column-gap: 2rem;
+    }
+
+    .section-third .section-third-task .task-1 h3,
+    .section-third .section-third-task .task-2 h3,
+    .section-third .section-third-task .task-3 h3 {
+        font-size: 2rem;
+    }
+
+    .section-third .section-third-task .task-1 p,
+    .section-third .section-third-task .task-2 p,
+    .section-third .section-third-task .task-3 p {
+        width: 28rem;
+    }
+
+    /* 4th section  */
+    #section-four-right-side {
+        margin: 0;
+        width: inherit;
+    }
+
+    #section-four #section-four-right-side h2 {
+        width: 40rem;
+
+    }
+
+    .common-section .left-side figure {
+        width: 33rem;
+    }
+
+    #section-four #section-four-right-side p {
+        width: 38rem;
+        height: 14rem;
+
+    }
+
+    /* section-five */
+
+    #section-five .right-side h2 {
+        width: 45rem;
+        line-height: 5rem;
+    }
+
+    #section-five .right-side .fitness-goals h3 {
+        line-height: 4rem;
+    }
+
+    #section-five .left-side {
+        margin-right: 6rem;
+    }
+
+}
+
+/* -----------------------------mobile-------------------------------------  */
+@media (max-width:770px) {
+
+    header,
+    .main-hero-section,
+    .common-section {
+        padding: 0 5rem;
+    }
+
+    header nav.logo img {
+
+        height: 2.7;
+    }
+
+    .nav-lists {
+        position: absolute;
+        right: 0px;
+        height: 68vh;
+        top: 8vh;
+        background-color: rgb(254, 253, 252);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 8;
+    }
+
+
+
+    header nav li {
+        font-size: 2.5rem;
+        padding: 3rem 2rem;
+        margin: 1.2rem;
+    }
+
+
+    /* menu button for mobile  */
+    #menu {
+        display: block;
+        visibility: inherit;
+        font-size: 25px;
+        margin: 0 3rem;
+        cursor:pointer;
+
+    }
+
+    #bar {
+        display: block;
+    }
+
+    
+    
+
+    /* main main-hero-section style */
+
+    .main-hero-section {
+        width: 100vh;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .main-hero-section .hero-left-side {
+        order: 2;
+        width: 100%;
+    }
+
+    .main-hero-section .hero-left-side h1 {
+        width: 35rem;
+        font-size: 5rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .main-hero-section .hero-left-side p {
+        width: 35rem;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .main-hero-section .hero-right-side {
+        order: 1;
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: transparent;
+    }
+
+    .main-hero-section .hero-right-side img {
+        width: 35rem;
+        height: 25rem;
+        margin: 0;
+        margin-top: 4rem;
+    }
+
+    /* -----------------------our 2nd section its hare---------------------------- */
+    .common-section {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .common-section .left-side figure {
+        height: 55rem;
+        width: 37rem;
+        margin-bottom: 4rem;
+    }
+
+    .common-section .left-side figure img {
+        height: 50rem;
+        width: 30rem;
+        margin-left: 5rem;
+    }
+
+    .common-section .right-side h2 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .common-section .right-side p {
+        width: 37rem;
+        margin-bottom: 6rem;
+    }
+
+    /* section-third section-third-task  */
+    .section-third {
+        height: inherit;
+        padding: 2rem 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-third h2 {
+        font-size: 4rem;
+    }
+
+    .section-third .section-third-task {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 3rem;
+        padding: 0;
+    }
+
+    .section-third .section-third-task .task-2 {
+        margin: 3rem 0;
+    }
+
+
+    /* section 4 style  */
+
+    #section-four .right-side h2 {
+        width: 40rem;
+        font-size: 4rem;
+    }
+
+    #section-four .right-side {
+        order: 2;
+    }
+
+    #section-four .left-side img {
+        height: 45rem;
+        width: 29rem;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    /* fifth section  */
+
+    #section-five .right-side h2 {
+        width: 37rem;
+        font-weight: 900;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    #section-five .right-side h3 {
+        font-size: 2rem;
+
+    }
+
+    /* footer style  */
+    .footer {
+        padding: 0 5rem;
+        width: 100%;
+        /* /* height: inherit; */
+        display: grid;
+        grid-template-columns: none;
+    }
+    .nav-active{
+        transform: translateX(0);
+    }
+}
+
+.nav-active{
+    transform: translateX(0);
+}
+
+.toggle #crose {
+    display: block;
+    visibility: inherit;
+
+}
+
+.toggle #bar {
+    display: none;
+    visibility: hidden;
+}
