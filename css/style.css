@@ -760,10 +760,10 @@ header nav .logo img {
 
 /* -----------------------------mobile-------------------------------------  */
 @media (max-width:770px) {
-    body{
-        overflow: hidden;
-        
+    body {
+        overflow-x: hidden;
     }
+
     header,
     .main-hero-section,
     .common-section {
@@ -789,6 +789,9 @@ header nav .logo img {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 8;
+        display: none;
+        visibility: hidden;
+
     }
 
 
@@ -968,6 +971,8 @@ header nav .logo img {
 
 .nav-active {
     transform: translateX(0);
+    display: flex;
+    visibility: inherit;
 }
 
 .toggle #crose {
