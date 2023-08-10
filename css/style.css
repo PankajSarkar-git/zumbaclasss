@@ -760,7 +760,7 @@ header nav .logo img {
 
 /* -----------------------------mobile-------------------------------------  */
 @media (max-width:770px) {
-    body {
+    .main{
         overflow-x: hidden;
     }
 
